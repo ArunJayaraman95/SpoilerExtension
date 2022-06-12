@@ -1,0 +1,18 @@
+{
+
+    "manifest_version": 3,
+    "name": "OnePieceBlock",
+    "description": "Block any one piece info on your browser",
+    "version": "1.1",
+  
+    "icons": {
+        "16": "/images/opskull.png",
+        "48": "/images/opskull.png",
+        "128": "/images/opskull.png"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "css": ["main.css"],
+        "js": ["content.js"]
+    }]
+}
